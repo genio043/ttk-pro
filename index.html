@@ -284,14 +284,14 @@
             const sustainedDPS = totalDamage / (secondsFiring + secondsReloading);
             const burstDPS = effectiveDamage * fireRate;
             document.getElementById('stats').innerHTML = `
-                Seconds Firing: ${secondsFiring.toFixed(2)} s<br>
-                Seconds Reloading: ${secondsReloading.toFixed(2)} s<br>
-                Shot Count: ${Math.round(shotCount)}<br>
-                Reload Count: ${reloadCount}<br>
-                Effective Accuracy: ${effectiveAccuracy}%<br>
-                Sustained DPS: ${sustainedDPS.toFixed(2)}<br>
-                Burst DPS: ${burstDPS.toFixed(2)}<br>
-                Total Damage Dealt: ${totalDamage.toFixed(2)}
+                Segundos Disparando: ${secondsFiring.toFixed(2)} s<br>
+                Segundos Recargando: ${secondsReloading.toFixed(2)} s<br>
+                Cantidad de Disparos: ${Math.round(shotCount)}<br>
+                Cantidad de Recargas: ${reloadCount}<br>
+                Precisión Efectiva: ${effectiveAccuracy}%<br>
+                DPS Sostenido: ${sustainedDPS.toFixed(2)}<br>
+                DPS de Ráfaga: ${burstDPS.toFixed(2)}<br>
+                Daño Total Infligido: ${totalDamage.toFixed(2)}
             `;
 
             drawChart(dataPoints);
