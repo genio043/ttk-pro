@@ -82,12 +82,51 @@
         #theoreticalTTK { font-size: 16px; color: #ffcc00; margin-top: 10px; }
         #stats { font-size: 14px; color: #ddd; margin-top: 10px; text-align: left; display: inline-block; }
         #chartExplanation { font-size: 14px; color: #bbb; margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto; }
-        canvas { max-width: 100%; margin: 20px 0; }
         .donate a { color: #00ccff; font-weight: bold; text-decoration: none; }
         @media (max-width: 500px) {
             input, select { width: 60px; }
             .input-group { margin: 5px; }
             h1 { font-size: 22px; }
+        }
+        canvas {
+            width: 70vw; /* 80% del ancho de la ventana */
+            height: 70vh; /* 80% del alto de la ventana */
+            min-width: 300px; /* No más chico que 300px en pantallas pequeñas */
+            min-height: 300px; /* Alto mínimo para legibilidad */
+            max-width: 1080px; /* Límite superior para pantallas enormes */
+            max-height: 800px; /* Límite superior para no exagerar */
+            margin: 20px auto; /* Centrado con espacio */
+            display: block; /* Evita problemas de inline */
+        }
+        a:visited {
+            color: #ff9900;
+        }
+        footer {
+            background: #2a2a2a;
+            padding: 15px 0px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #00ccff;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+            color: #bbb;
+        }
+        footer a {
+            color: #00ff99;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        footer a:hover {
+            color: #1e1e1e;
+            background: #00ff99;
+            padding: 5px 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px #00ff99;
         }
     </style>
     
@@ -421,5 +460,6 @@
             document.getElementById('chartExplanation').innerHTML = '';
         }
     </script>
+    <footer><p>Volver a <a href="https://genio043.github.io/">Genio043 Tools</a></p></footer>
 </body>
 </html>
