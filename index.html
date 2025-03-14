@@ -320,7 +320,7 @@
             // theoretica lTTK
             const netDamagePerSecond = dps - (healthRegen + armorRegen * (1 - armorAbsorption));
             const theoreticalTTK = netDamagePerSecond <= 0 ? "∞" : ((hp + armor) / netDamagePerSecond).toFixed(2);
-            document.getElementById('theoreticalTTK').innerHTML = `TTK Teórico: ${theoreticalTTK} ${theoreticalTTK === "∞" ? "" : "segundos"}`;
+            document.getElementById('theoreticalTTK').innerHTML = `Theoretical TTK: ${theoreticalTTK} ${theoreticalTTK === "∞" ? "" : "seconds"}`;
 
             // Chart and stats simulation (until 60s)
             let currentHP = hp;
