@@ -357,7 +357,7 @@
                 dataPoints.push({ time: time.toFixed(2), hp: currentHP, armor: currentArmor });
             }
 
-            const ttk = currentHP <= 0 ? dataPoints[dataPoints.length - 1].time : "Not kill";
+            const ttk = currentHP <= 0 ? dataPoints[dataPoints.length - 1].time : "Not kill in 60 ";
             document.getElementById('result').innerHTML = `TTK (until 60s): ${ttk} seconds`;
 
             // Estadísticas detalladas
